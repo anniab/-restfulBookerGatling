@@ -1,11 +1,13 @@
 package test.simulations
 import io.gatling.core.Predef._
 import scala.concurrent.duration._
-import test.scenarios.GetBookScenario
+import test.scenarios.BookingScenario
 import test.config.Configuration.users
 class SimulationUser extends Simulation {
-  private val createUserExec = GetBookScenario.createUserScenario
-    .inject(atOnceUsers(users))
+  private val bookingScenarioExec = BookingScenario.bookingScenario
+    .inject(
+      atOnceUsers(users),
+      rampUsers(users).during(2))
 
-  setUp(createUserExec)
+  setUp(bookingScenarioExec)
 }

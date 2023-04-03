@@ -1,14 +1,13 @@
 package test.requests
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
-import io.gatling.http.Predef.{http, status}
 import test.config.Configuration.app_url
-
-object GetOnceBook {
+object GetBooking {
   val sentHeaders = Map("Authorization" -> "bearer ${token}")
 
-  val getBook = exec(http("getBookOnce")
-    .get(app_url + "/booking/1")
+  val getBook = exec(http("getBooking")
+    .get(app_url + "/booking")
     .headers(sentHeaders)
     .check(status is 200))
+   
 }
