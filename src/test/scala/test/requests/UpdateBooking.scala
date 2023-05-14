@@ -1,13 +1,13 @@
 package test.requests
-import io.gatling.core.Predef.*
-import io.gatling.http.Predef.*
+import io.gatling.core.Predef._
+import io.gatling.http.Predef._
 import test.config.Configuration.app_url
 
 object UpdateBooking {
-  val sentHeaders = Map("Authorization" -> "bearer ${token}")
+ // val sentHeaders = Map("Authorization" -> "bearer ${token}")
   val updateBook = exec(http("updateBooking")
     .put(app_url + "/booking/1")
-    .headers(sentHeaders)
+    .headers(Map("Authorization" -> "bearer ${token}"))
     .body(StringBody(
       s"""{
       "firstname" : "Jims",

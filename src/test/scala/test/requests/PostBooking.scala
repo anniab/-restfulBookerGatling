@@ -4,11 +4,11 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import test.config.Configuration.app_url
 object PostBooking {
-  val sentHeaders = Map("Authorization" -> "bearer ${token}")
+  //val sentHeaders = Map("Authorization" -> "bearer ${token}")
 
   val postBook = exec(http("postBooking")
     .post(app_url + "/booking")
-    .headers(sentHeaders)
+    .headers(Map("Authorization" -> "bearer ${token}"))
     .body(StringBody(
       s"""{
       "firstname" : "Jims",
