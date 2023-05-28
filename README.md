@@ -1,6 +1,25 @@
 # restfulBookerGatling
 
+Tests based on free API from https://restful-booker.herokuapp.com/apidoc/index.html
+Gatling used in open source version
+Is an example of a very simple performance test.
+The simulation is started with a command -clean scala:compile gatling:test -Dgatling.simulationClass.SimulationUser
+Results can be found in\restfulbookergatling\target\gatling\simulationuser
 
+![image](https://github.com/anniab/restfulBookerGatling/assets/73132236/7a697ee5-d127-4058-b620-8ba9b4a1ef98)
+In the Report there are exact statistics from the tests, statistics from a requests simulation can also be found in the simulation.log file
+
+it's important to know that:
+-The API https://restful-booker.herokuapp.com/apidoc/index.html is not stable
+-The stress test approach is very simplified for this API
+-There is no distinction based on the type of request, which would be the case under production conditions
+-No additional elements such as assertions, etc
+
+
+How could these tests be extended?
+-business scenario could be introduced
+-differentiate the approach to the test due to the type of POST / GET method
+-add additional elements, such as assertions
 
 ## Getting started
 
