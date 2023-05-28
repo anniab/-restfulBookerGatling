@@ -11,7 +11,7 @@ Results can be found in\restfulbookergatling\target\gatling\simulationuser<br />
 
 ![image](https://github.com/anniab/restfulBookerGatling/assets/73132236/7a697ee5-d127-4058-b620-8ba9b4a1ef98)<br />
 In the Report there are exact statistics from the tests, statistics from a requests simulation can also be found in the simulation.log file<br />
-## 
+
 it's important to know that:<br />
 <ul>
 <li>The API https://restful-booker.herokuapp.com/apidoc/index.html is not stable</li>
@@ -19,7 +19,7 @@ it's important to know that:<br />
 <li>There is no distinction based on the type of request, which would be the case under production conditions</li>
 <li>No additional elements such as assertions, etc</li>
  </ul>
- ## 
+
 How could these tests be extended?<br />
 <ul>
 <li>business scenario could be introduced</li>
