@@ -10,17 +10,19 @@ Results can be found in\restfulbookergatling\target\gatling\simulationuser<br />
 In the Report there are exact statistics from the tests, statistics from a requests simulation can also be found in the simulation.log file<br />
 
 it's important to know that:<br />
--The API https://restful-booker.herokuapp.com/apidoc/index.html is not stable<br />
--The stress test approach is very simplified for this API<br />
--There is no distinction based on the type of request, which would be the case under production conditions<br />
--No additional elements such as assertions, etc<br />
+<ul>
+<li>The API https://restful-booker.herokuapp.com/apidoc/index.html is not stable</li><br />
+<li>The stress test approach is very simplified for this API</li><br />
+<li>There is no distinction based on the type of request, which would be the case under production conditions</li><br />
+<li>No additional elements such as assertions, etc</li><br />
+ </ul>
 
-
-How could these tests be extended?<br />
--business scenario could be introduced<br />
--differentiate the approach to the test due to the type of POST / GET method<br />
--add additional elements, such as assertions<br />
-
+<ul>
+How could these tests be extended?</li><br />
+<li>business scenario could be introduced</li><br />
+<li>differentiate the approach to the test due to the type of POST / GET method</li><br />
+<li>add additional elements, such as assertions</li><br />
+</ul>
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
