@@ -5,7 +5,7 @@ Gatling used in open source version <br />
 Is an example of a very simple performance test.<br />
 The simulation is started with a command 
 ```
--clean scala:compile gatling:test -Dgatling.simulationClass.SimulationUser<br />
+-clean scala:compile gatling:test -Dgatling.simulationClass.SimulationUser
 ```
 Results can be found in\restfulbookergatling\target\gatling\simulationuser<br />
 
