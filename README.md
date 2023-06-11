@@ -15,8 +15,8 @@ In the Report there are exact statistics from the tests, statistics from a reque
 it's important to know that:<br />
 <ul>
 <li>The API https://restful-booker.herokuapp.com/apidoc/index.html is not stable</li>
-<li>The stress test approach is very simplified for this API</li>
-<li>There is no distinction based on the type of request, which would be the case under production conditions</li>
+<li>This test is for illustrative purposes only and does not reflect tests performed under production conditions</li>
+<li>The test approach is very simplified for this API</li>
 <li>No additional elements such as assertions, etc</li>
  </ul>
 
