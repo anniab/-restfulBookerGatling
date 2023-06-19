@@ -9,5 +9,4 @@ object GetBooking {
     .get(app_url + "/booking")
     .headers(Map("Authorization" -> "bearer ${token}"))
     .check(status is 200))
-   
 }
