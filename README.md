@@ -1,11 +1,16 @@
 # restfulBookerGatling
 #Test Case
-1. Pause first
-2.Injects a 10 number of users at once.
-3.Injects a 400 of users distributed evenly on a time window of a 10 duration.
-4.use statistics calculated for each individual request,
-  check successful Requests in 95percentil,
-  check that the mean (average) response time of all requests is less than or equal to 500 milliseconds
+<ol>
+<li>Pause first</li> 
+<li>Injects a 10 number of users at once</li>
+<li>Injects a 400 of users distributed evenly on a time window of a 10 duration</li>    
+<li>use statistics calculated for each individual request</li>
+<ol>
+  <li>check successful Requests in 95percentil</li>
+  <li>check that the mean (average) response time of all requests is less than or equal to 500 milliseconds</li>
+</ol>
+</ol>
+
 
 
 Tests based on free API from https://restful-booker.herokuapp.com/apidoc/index.html <br />
@@ -18,8 +23,7 @@ The simulation is started with a command
 ```
 Results can be found in\restfulbookergatling\target\gatling\simulationuser<br />
 
-![image](https://github.com/anniab/restfulBookerGatling/assets/73132236/91c1c47c-50e7-4a3d-8c26-bf9a6579aa69)
-<br />
+![image](https://github.com/anniab/restfulBookerGatling/assets/73132236/1ece69ff-66b4-4609-abbd-3d5b1a99d478)<br />
 In the Report there are exact statistics from the tests, statistics from a requests simulation can also be found in the simulation.log file<br />
 
 it's important to know that:<br />
